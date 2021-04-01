@@ -5,6 +5,11 @@
 #         self.next = next
 class Solution:
     def isPalindrome(self, head: ListNode) -> bool:
+        
+        #Edge case if empty or len 1.
+        if head is None or head.next is None:
+            return True
+    
         #Empty arr
         nums = []
         
